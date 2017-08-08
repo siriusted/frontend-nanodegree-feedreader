@@ -63,7 +63,6 @@ $(function() {
          */
         var menuIcon = document.getElementsByClassName('menu-icon-link')[0];
         it('is hidden by default', function() {
-            //expect(body.hasClass('menu-hidden')).toBe(true);
             expect(document.body.classList.contains('menu-hidden')).toBe(true);
         });     
          /* Write a test that ensures the menu changes
@@ -92,10 +91,9 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('has at least a single .entry element within the .feed container', function(done) {
-            var entries = document.getElementsByClassName('entry');
+        it('has at least a single .entry element within the .feed container', function() {
+            var entries = document.querySelector('.feed').getElementsByClassName('entry');
             expect(entries.length).toBeGreaterThan(0);
-            done();
         });        
     });
 
