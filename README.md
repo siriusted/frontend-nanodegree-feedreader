@@ -2,7 +2,7 @@
 
 A test suite implementation for a web-based application that reads RSS feeds. Used [Jasmine](http://jasmine.github.io/).
 
-#How to Run the application
+# How to Run the application
 
 1. Clone this repository
 2. Open the index.html file in your browser to view all tests in their passing state
